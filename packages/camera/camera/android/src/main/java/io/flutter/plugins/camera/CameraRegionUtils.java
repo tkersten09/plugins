@@ -9,6 +9,7 @@ import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.params.MeteringRectangle;
 import android.os.Build;
 import android.util.Size;
+import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import io.flutter.embedding.engine.systemchannels.PlatformChannel;
@@ -158,6 +159,7 @@ public final class CameraRegionUtils {
     @VisibleForTesting
     public static MeteringRectangle create(
         int x, int y, int width, int height, int meteringWeight) {
+      Log.i("Camera", "MeteringRectangleFactory | MeteringRectangle(x : " + x +  " , y : " + y +" , width : " + width + " , height: " + height +" , meteringWeight: " + meteringWeight +" )"|);
       return new MeteringRectangle(x, y, width, height, meteringWeight);
     }
   }
