@@ -122,7 +122,7 @@ public final class CameraRegionUtils {
       targetY = maxTargetY;
     }
     // Build the metering rectangle.
-    Log.d("Camera", "convertPointToMeteringRectangle | MeteringRectangle(x : " + targetX +  " , y : " + targetY + " , width : " + targetWidth + " , height: " + targetHeight + " , meteringWeight: " + meteringWeight +" )");
+    Log.d("Camera", "convertPointToMeteringRectangle | MeteringRectangle(x : " + targetX +  " , y : " + targetY + " , width : " + targetWidth + " , height: " + targetHeight + " )");
     return MeteringRectangleFactory.create(targetX, targetY, targetWidth, targetHeight, 1);
   }
 
