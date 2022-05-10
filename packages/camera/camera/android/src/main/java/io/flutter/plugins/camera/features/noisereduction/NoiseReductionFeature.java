@@ -82,7 +82,7 @@ public class NoiseReductionFeature extends CameraFeature<NoiseReductionMode> {
       return;
     }
 
-    Log.i("Camera", "updateNoiseReduction | currentSetting: " + currentSetting);
+    Log.d("Camera", "updateNoiseReduction | currentSetting: " + currentSetting);
 
     // Always use fast mode.
     requestBuilder.set(

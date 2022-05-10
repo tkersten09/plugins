@@ -122,7 +122,7 @@ public final class CameraRegionUtils {
       targetY = maxTargetY;
     }
     // Build the metering rectangle.
-    Log.i("Camera", "convertPointToMeteringRectangle | MeteringRectangle(x : " + targetX +  " , y : " + targetY +" , width : " + targetWidth + " , height: " + targetHeight +" , meteringWeight: " + meteringWeight +" )"|);
+    Log.d("Camera", "convertPointToMeteringRectangle | MeteringRectangle(x : " + targetX +  " , y : " + targetY + " , width : " + targetWidth + " , height: " + targetHeight + " , meteringWeight: " + meteringWeight +" )");
     return MeteringRectangleFactory.create(targetX, targetY, targetWidth, targetHeight, 1);
   }
 
@@ -160,7 +160,7 @@ public final class CameraRegionUtils {
     @VisibleForTesting
     public static MeteringRectangle create(
         int x, int y, int width, int height, int meteringWeight) {
-      Log.i("Camera", "MeteringRectangleFactory | MeteringRectangle(x : " + x +  " , y : " + y +" , width : " + width + " , height: " + height +" , meteringWeight: " + meteringWeight +" )"|);
+      Log.d("Camera", "MeteringRectangleFactory | MeteringRectangle(x : " + x +  " , y : " + y +" , width : " + width + " , height: " + height +" , meteringWeight: " + meteringWeight +" )");
       return new MeteringRectangle(x, y, width, height, meteringWeight);
     }
   }
